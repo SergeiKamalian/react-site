@@ -13,6 +13,8 @@ import Clients from './Pages/Clients/Clients';
 import { checkSessionIsAuth } from './Utils/checkSessionIsAuth';
 import { IFormInputValues } from './module';
 import { getUsersData } from './Api/Api';
+import CheckerId from './Components/CheckOut/CheckerId';
+import SingleUser from './Pages/SingleUser/SingleUser';
 
 function App() {
 
@@ -45,6 +47,11 @@ function App() {
         <Route path='/sign-up/ready' element={<RegistrationSucceed />} />
         <Route path='/' element={<Home />} />
         <Route path='happy-clients' element={<Clients />} />
+        <Route path='happy-clients/:id' element={
+          <CheckerId>
+            <SingleUser />
+          </CheckerId>
+        } />
         <Route path='/about' element={
           <CheckOut isAuth={isAuth}>
             <AboutUs />
