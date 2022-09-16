@@ -1,0 +1,33 @@
+@import url('../Components/Navigation/Navigation.scss');
+@import url('../Components/Button/Button.scss');
+@import url('../Components/Footer/Footer.scss');
+@import url('../Pages/AboutUs/AboutUs.scss');
+@import url('../Pages/Home/Home.scss');
+@import url('../Pages/LogIn/LogIn.scss');
+@import url('../Pages/Registration/Registration.scss');
+@import url('../Pages/Registration/RegistrationSucceed.scss');
+@import url('../Components/NavigationUser/NavigationUser.scss');
+@import url('../Pages/Clients/Clients.scss');
+@import url('../Pages/SingleUser/SingleUser.scss');
+@import url('../Pages/Products/Products.scss');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background: #edf4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page {
+    width: 100%;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
